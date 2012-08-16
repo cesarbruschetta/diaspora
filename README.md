@@ -18,7 +18,7 @@ RODRIGO TOYOKAZU SHIMABUKURO
 
 
 *************************
-Aplicação desenvolvida em Ruby,JQuery, Ruby on Rails, Blueprint-CSS, baseada no "Diaspora" **[repositorio principal(https://github.com/diaspora/diaspora)], **[project site](http://diasporaproject.org)**
+Aplicação desenvolvida em Ruby,JQuery, Ruby on Rails, Blueprint-CSS, baseada no "Diaspora" **[repositorio principal](https://github.com/diaspora/diaspora)**, **[project site](http://diasporaproject.org)**
 
 
 ********************
