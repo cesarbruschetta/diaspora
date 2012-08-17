@@ -10,11 +10,10 @@ Sistema desenvolvido para Trabalho de Conclusão de Curso (TCC) do curso de "Sis
 
 ********************
 Integrantes do grupo
-
-CESAR AUGUSTO BRUSCHETTA
-FELIPE BONIFACIO FEITOSA
-MARIANA BOGDAN BLASQUE
-RODRIGO TOYOKAZU SHIMABUKURO
+	- CESAR AUGUSTO BRUSCHETTA
+	- FELIPE BONIFACIO FEITOSA
+	- MARIANA BOGDAN BLASQUE
+	- RODRIGO TOYOKAZU SHIMABUKURO
 
 
 *************************
@@ -23,10 +22,10 @@ Aplicação desenvolvida em Ruby,JQuery, Ruby on Rails, Blueprint-CSS, baseada n
 
 ********************
 Diaspora is written by:
-  Daniel Grippi
-  Ilya Zhitomirskiy
-  Maxwell Salzberg
-  Raphael Sofaer
+  - Daniel Grippi
+  - Ilya Zhitomirskiy
+  - Maxwell Salzberg
+  - Raphael Sofaer
 
 
 

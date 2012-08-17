@@ -53,6 +53,7 @@ tmp/*
 .idea
 .redcar
 .rvmrc
+.project
 .stgit*
 *.swap
 *.swo

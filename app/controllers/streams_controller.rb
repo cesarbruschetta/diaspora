@@ -32,6 +32,7 @@ class StreamsController < ApplicationController
   end
 
   def activity
+    #debugger
     stream_responder(Stream::Activity)
   end
 
