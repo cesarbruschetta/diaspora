@@ -9,11 +9,11 @@ Integração com as redes sociais
 Sistema desenvolvido para Trabalho de Conclusão de Curso (TCC) do curso de "Sistema para Internet" da "Faculdade Municipal de São Caetano do Sul - USCS, São Paulo - Brasil"
 
 ********************
-Integrantes do grupo
-	- CESAR AUGUSTO BRUSCHETTA
-	- FELIPE BONIFACIO FEITOSA
-	- MARIANA BOGDAN BLASQUE
-	- RODRIGO TOYOKAZU SHIMABUKURO
+Integrantes do grupo:
+  - CESAR AUGUSTO BRUSCHETTA
+  - FELIPE BONIFACIO FEITOSA
+  - MARIANA BOGDAN BLASQUE
+  - RODRIGO TOYOKAZU SHIMABUKURO
 
 
 *************************
