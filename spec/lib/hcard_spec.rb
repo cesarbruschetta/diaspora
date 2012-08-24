@@ -14,7 +14,7 @@ describe HCard do
     hcard[:photo].include?("thumb_large").should be true
     hcard[:photo_medium].include?("thumb_medium").should be true
     hcard[:photo_small].include?("thumb_small").should be true
-    hcard[:url].should == "http://localhost:3000/"
+    hcard[:url].should == "http://passim.com.br/"
     hcard[:searchable].should == "false"
   end
 end

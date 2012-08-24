@@ -36,13 +36,8 @@ xml_locales/*
 
 #Documentation
 .yardoc/
-doc/
 
 # Uploaded files and local files
-public/uploads/*
-public/assets/*
-public/source.tar*
-public/.well-known
 tmp/**/*
 tmp/*
 *.sqlite3
@@ -59,7 +54,7 @@ tmp/*
 *.swo
 *.swp
 *~
-bin/*
+
 nbproject
 patches-*
 capybara-*.html

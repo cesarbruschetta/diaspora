@@ -44,9 +44,9 @@ factory = {
       "id": id,
       "diaspora_id": "bob@bob.com",
       "avatar":{
-        "large":"http://localhost:3000/images/user/uma.jpg",
-        "medium":"http://localhost:3000/images/user/uma.jpg",
-        "small":"http://localhost:3000/images/user/uma.jpg"}
+        "large":"http://www.passim.com.br/images/user/uma.jpg",
+        "medium":"http://www.passim.com.br/images/user/uma.jpg",
+        "small":"http://www.passim.com.br/images/user/uma.jpg"}
     }
 
     return _.extend(defaultAttrs, overrides)
@@ -84,14 +84,14 @@ factory = {
       "bio": "I am a cat lover and I love to run",
       "birthday": "2012-04-17",
       "created_at": "2012-04-17T23:48:35Z",
-      "diaspora_handle": "bob@localhost:3000",
+      "diaspora_handle": "bob@www.passim.com.br",
       "first_name": "Bob",
       "full_name": "bob grimm",
       "gender": "robot",
       "id": id,
-      "image_url": "http:\/\/localhost:3000\/assets\/user\/wolf.jpg",
-      "image_url_medium": "http:\/\/localhost:3000\/assets\/user\/wolf.jpg",
-      "image_url_small": "http:\/\/localhost:3000\/assets\/user\/wolf.jpg",
+      "image_url": "http:\/\/www.passim.com.br\/assets\/user\/wolf.jpg",
+      "image_url_medium": "http:\/\/www.passim.com.br\/assets\/user\/wolf.jpg",
+      "image_url_small": "http:\/\/www.passim.com.br\/assets\/user\/wolf.jpg",
       "last_name": "Grimm",
       "location": "Earth",
       "nsfw": false,
@@ -111,9 +111,9 @@ factory = {
       guid: "8b0db16a4c4307b2" + id,
       id: id,
       sizes: {
-          large: "http://localhost:3000/uploads/images/scaled_full_d85410bd19db1016894c.jpg",
-          medium: "http://localhost:3000/uploads/images/thumb_medium_d85410bd19db1016894c.jpg",
-          small: "http://localhost:3000/uploads/images/thumb_small_d85410bd19db1016894c.jpg"
+          large: "http://www.passim.com.br/uploads/images/scaled_full_d85410bd19db1016894c.jpg",
+          medium: "http://www.passim.com.br/uploads/images/thumb_medium_d85410bd19db1016894c.jpg",
+          small: "http://www.passim.com.br/uploads/images/thumb_small_d85410bd19db1016894c.jpg"
         }
     }, overrides)
   },
