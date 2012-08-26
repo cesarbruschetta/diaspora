@@ -29,3 +29,4 @@ class Service < ActiveRecord::Base
 end
 require Rails.root.join('app', 'models', 'services', 'facebook')
 require Rails.root.join('app', 'models', 'services', 'twitter')
+require Rails.root.join('app', 'models', 'services', 'google')

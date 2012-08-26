@@ -11,7 +11,8 @@ app.views.ServicesSelector = app.views.Base.extend({
   services : [
     'facebook',
     'twitter',
-    'tumblr'
+    'tumblr',
+    'googleplus'
   ],
 
   presenter : function() {

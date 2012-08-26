@@ -26,7 +26,7 @@ class ServicesController < ApplicationController
     provider = auth['provider']
     user     = auth['info']
 
-    service = "Services::#{provider.camelize}".constantize.new(:nickname => user['nickname'],
+    service = "Services::#{provider.camelize}".constantize.new(:nickname => user['nickname']||user['uid'],
                                                                :access_token => toke,
                                                                :access_secret => secret,
                                                                :uid => auth['uid'])
@@ -49,7 +49,8 @@ class ServicesController < ApplicationController
       end
     end
 
-    render :text => ("<script>window.close()</script>")
+    render :text => ("<script>window.parent.document.location.reload(true);
+                              window.close()</script>")
   end
 
   def failure

@@ -213,10 +213,13 @@ defaults: &defaults
   #this will be the namespace for your object, it should be configured in your FB app
   open_graph_namespace: ''
 
-
   ## OAuth credentials for Twitter:
   twitter_consumer_key: 'ZERk8zPc6nBjoec8GZw'
   twitter_consumer_secret: 'z8Q3B9ANDJAsvajs1A1WDdQrGZCTlsl1XrAkNPpZaI'
+  
+  ## OAuth credentials for Google Plus:
+  google_client_key: '935348791883.apps.googleusercontent.com'
+  google_client_secret: 'IXZtMS4hA583VKocqAeOe5Ar'        
 
   ## OAuth credentials for Tumblr
   tumblr_consumer_key: ''

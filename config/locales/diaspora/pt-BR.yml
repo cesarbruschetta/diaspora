@@ -784,6 +784,7 @@ pt-BR:
       connect_to_facebook: "Conectar-se em Facebook"
       connect_to_tumblr: "Conectar-se em Tumblr"
       connect_to_twitter: "Conectar-se em Twitter"
+      connect_to_google: "Conectar-se em Google Plus"
       disconnect: "desconectar"
       edit_services: "Editar serviços"
       logged_in_as: "logado(a) como"

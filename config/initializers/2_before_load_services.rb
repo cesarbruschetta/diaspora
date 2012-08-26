@@ -8,7 +8,6 @@ end
 
 oauth_keys_file = Rails.root.join('config', 'oauth_keys.yml').to_s
 
-
 SERVICES = load_config_yaml("#{oauth_keys_file}.example")
 
 #this is to be backwards compatible with current production setups

@@ -14,6 +14,7 @@
   - else
     = t('services.index.no_services')
 
+<div id='section_header' style="padding-bottom: 10px; margin-bottom: 10px;"></div>
 - AppConfig.configured_services.each do |service|
   - unless @services.any?{|x| x.provider == service}
     %h4= link_to t("services.index.connect_to_#{service}"), "#", :onclick => "window.open('/auth/#{service}', 'popup', 'height=400,width=500')"
