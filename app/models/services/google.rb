@@ -9,18 +9,13 @@ class Services::GooglePlus < Service
   end
 
   def getTimeLine
-    
-    
     person = configure_googleplus
     activity = person.list_activities
     
     result = []
     for item in activity
-      #debugger
-      
       obj = item.attributes
       posts = {}
-      
       posts['service'] = 'google_plus'
       posts['uid_post'] = obj['id']
       
@@ -30,7 +25,6 @@ class Services::GooglePlus < Service
           text += ' | ' + i['url']
         end 
       end
-       
       posts['text'] = text 
       posts['data_creation'] = obj['updated']
       

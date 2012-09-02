@@ -25,7 +25,6 @@ gem 'omniauth', '1.0.3'
 gem 'omniauth-facebook'
 gem 'omniauth-tumblr'
 gem 'omniauth-twitter'
-#gem 'omniauth-google'
 gem 'omniauth-google-oauth2'
 gem 'omniauth-google-plus-oauth2', :git => 'https://github.com/luke-gru/omniauth-google-plus-oauth2.git'
 
