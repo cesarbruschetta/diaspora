@@ -1,4 +1,5 @@
 require 'uri'
+require 'chronic'
 
 class Services::Twitter < Service
   MAX_CHARACTERS = 140
@@ -31,6 +32,25 @@ class Services::Twitter < Service
     configure_twitter
 
     Twitter.profile_image(nickname, :size => "original")
+  end
+
+  def getTimeLine
+    configure_twitter
+    #debugger
+    hora = Chronic.parse('15 minutes ago')
+    
+    result = []
+    for item in Twitter.user_timeline
+      posts = {}
+      posts['service'] = 'twitter'
+      posts['uid_post'] = item['id'] 
+      posts['text'] = item['text']
+      posts['data_creation'] = item['created_at']
+      
+      result.append(posts)
+    end
+    
+    return result  #Twitter.user_timeline #.find(:created_at=>hora).each
   end
 
   private

@@ -218,8 +218,8 @@ defaults: &defaults
   twitter_consumer_secret: 'z8Q3B9ANDJAsvajs1A1WDdQrGZCTlsl1XrAkNPpZaI'
   
   ## OAuth credentials for Google Plus:
-  google_client_key: '935348791883.apps.googleusercontent.com'
-  google_client_secret: 'IXZtMS4hA583VKocqAeOe5Ar'        
+  google_client_key: '800668408483.apps.googleusercontent.com'
+  google_client_secret: 'L6OiE44QtAulGR6oUmKl6XV4'        
 
   ## OAuth credentials for Tumblr
   tumblr_consumer_key: ''

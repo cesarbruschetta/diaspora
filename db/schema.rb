@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120803143552) do
+ActiveRecord::Schema.define(:version => 20120902120422) do
 
   create_table "account_deletions", :force => true do |t|
     t.string  "diaspora_handle"
@@ -264,6 +264,18 @@ ActiveRecord::Schema.define(:version => 20120803143552) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
+
+  create_table "post_services", :force => true do |t|
+    t.string   "service"
+    t.string   "uid_post"
+    t.text     "text"
+    t.datetime "data_creation"
+    t.integer  "user_id"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
+
+  add_index "post_services", ["user_id"], :name => "index_post_services_on_user_id"
 
   create_table "posts", :force => true do |t|
     t.integer  "author_id",                                              :null => false

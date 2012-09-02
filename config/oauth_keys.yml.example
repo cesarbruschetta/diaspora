@@ -7,7 +7,7 @@ facebook:
 tumblr:
   consumer_key: <%= AppConfig['tumblr_consumer_key'] %>
   consumer_secret: <%= AppConfig['tumblr_consumer_secret'] %>
-google:
+google_plus:
   client_key: <%= AppConfig['google_client_key'] %>
   client_secret: <%= AppConfig['google_client_secret'] %>
   

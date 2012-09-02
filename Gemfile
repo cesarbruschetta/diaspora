@@ -4,6 +4,7 @@ gem 'bundler', '> 1.1.0'
 ruby '1.9.3' if ENV['HEROKU']
 
 gem 'rails', '3.2.6'
+gem 'chronic', '0.7.0'
 
 gem 'foreman', '0.46'
 
@@ -24,12 +25,14 @@ gem 'omniauth', '1.0.3'
 gem 'omniauth-facebook'
 gem 'omniauth-tumblr'
 gem 'omniauth-twitter'
-gem 'omniauth-google'
-#gem 'omniauth-google-oauth2'
-#gem 'omniauth-google-plus-oauth2', :git => 'https://github.com/luke-gru/omniauth-google-plus-oauth2.git'
+#gem 'omniauth-google'
+gem 'omniauth-google-oauth2'
+gem 'omniauth-google-plus-oauth2', :git => 'https://github.com/luke-gru/omniauth-google-plus-oauth2.git'
 
 
 gem 'twitter', '2.0.2'
+gem 'koala', '1.5.0'
+gem 'google_plus', '0.2.2'
 
 # mail
 

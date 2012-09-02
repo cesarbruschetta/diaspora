@@ -26,7 +26,7 @@ class ServicesController < ApplicationController
     provider = auth['provider']
     user     = auth['info']
 
-    service = "Services::#{provider.camelize}".constantize.new(:nickname => user['nickname']||user['uid'],
+    service = "Services::#{provider.camelize}".constantize.new(:nickname => user['nickname'],
                                                                :access_token => toke,
                                                                :access_secret => secret,
                                                                :uid => auth['uid'])

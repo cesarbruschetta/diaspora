@@ -1,22 +1,23 @@
 class FindRedesController < ApplicationController
   
   def index
+    users = User.all
     #debugger
-    t = Twitter
     
-    t.configure do |config|
-        config.consumer_key = 'ZERk8zPc6nBjoec8GZw'
-        config.consumer_secret = 'z8Q3B9ANDJAsvajs1A1WDdQrGZCTlsl1XrAkNPpZaI'
-        config.oauth_token = '277602874-9dmzZkMFkeEY94EsLVeqJ2IlsrcDFwy7fHivv9Ok'
-        config.oauth_token_secret = 'z5UB9c60IeDtulN6bKRMVuiDWWOcNqGlIf0phzAcJnA'
+    for user in users
+        
+      for service in user.services
+        posts = service.getTimeLine
+        for post in posts
+          post['user_id'] = user.id
+          if PostService.find(:all, :conditions => {'uid_post'=>post['uid_post']}) == []
+            db = PostService.new(post)
+            db.save()
+          end   
+        end
+      end
     end
-    
-    #@t = Twitter
-    #@x = Twitter.user_timeline("atallef")
-    @m = t.home_timeline #.find_all
-    
-    
+ 
   end
-  
   
 end

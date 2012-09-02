@@ -4,7 +4,7 @@ class Services::Facebook < Service
 
   OVERRIDE_FIELDS_ON_FB_UPDATE = [:contact_id, :person_id, :request_id, :invitation_id, :photo_url, :name, :username]
   MAX_CHARACTERS = 420
-
+  
   def provider
     "facebook"
   end
@@ -38,4 +38,36 @@ class Services::Facebook < Service
   def profile_photo_url
    "https://graph.facebook.com/#{self.uid}/picture?type=large&access_token=#{URI.escape(self.access_token)}"
  end
+ 
+ def getTimeLine
+   facebook = configure_facebook
+   my_posts = facebook.get_connections('me','posts')
+   
+   result = []
+   for item in my_posts
+    
+     posts = {}
+     posts['service'] = 'facebook'
+     posts['uid_post'] = item['id'] 
+     text = item['message'] || item['story']
+     if item['picture']
+        text += ' | '+ item['picture'] 
+     end
+     posts['text'] = text
+     posts['data_creation'] = item['created_time']
+      
+     result.append(posts)
+     
+   end    
+   
+   return result
+ end
+    
+ private
+ def configure_facebook
+   facebook_token = self.access_token
+   conection = Koala::Facebook::API.new(facebook_token) 
+   return conection
+ end
+ 
 end
