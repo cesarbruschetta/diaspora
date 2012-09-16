@@ -16,6 +16,7 @@ class Stream::Multi < Stream::Base
   end
 
   def posts
+    #debugger
     @posts ||= ::EvilQuery::MultiStream.new(user, order, max_time, include_community_spotlight?).make_relation!
   end
 

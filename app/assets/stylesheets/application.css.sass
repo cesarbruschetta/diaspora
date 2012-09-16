@@ -28,7 +28,9 @@ body
   :padding 2em
   :margin 0
     :top 33px
-  :background-color $background
+  :background url(/assets/texture/bg.png) repeat
+
+/*$background*/
 
   :font
     :family "Helvetica Neue",Helvetica,Arial,sans-serif
@@ -84,6 +86,13 @@ ul > li
     :color #fff
   :border 1px solid #ccc
   :height 100%
+
+.conteudo
+  background-color: #EEEEEE
+  border-radius: 6px 6px 6px 6px
+  margin-bottom: 30px
+  padding: 20px
+  float: left
 
 .login_error,
 .login_alert
@@ -1327,12 +1336,12 @@ footer
   :color #999
 
   .container
-    :margin
-      :top 4em
+    /*:margin
+      :top 4em*/
     :padding 0
       :top 0.5em
     :border
-      :top 1px solid #ddd
+      :top 1px solid #000
 
   img
     :margin-top 2px

@@ -30,7 +30,7 @@
           = t('.we_can_speed_things_up')
           = link_to t('.hooking_up_fb'), "auth/facebook?callback_url=#{getting_started_url}"
           = t('.what_facebook_does')
-
+      
       .row
         .span6
           = form_tag profile_path, :method => :put, :remote => true, :id => 'edit_profile' do
@@ -51,7 +51,10 @@
                 = render 'photos/new_profile_photo', :aspect => :getting_started, :person => current_user.person
       %br
       %br
+    
+    = render 'question_perfil'  
 
+    %br
     .clearfix
       .row
         %h2

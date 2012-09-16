@@ -37,6 +37,7 @@ class StreamsController < ApplicationController
   end
 
   def multi
+    #debugger
     if params[:ex] && flag.new_stream?
       @stream = Stream::Multi.new(current_user, :max_time => max_time)
       gon.stream = PostPresenter.collection_json(@stream.stream_posts, current_user)
