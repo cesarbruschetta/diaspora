@@ -5,7 +5,8 @@ body {
 }
 
 body {
-  background-image : image_url("texture/light-bg.png");
+  /*background-image : image_url("texture/light-bg.png");*/
+  background-color: #fde18b;
   padding : none;
 
   &.lock {

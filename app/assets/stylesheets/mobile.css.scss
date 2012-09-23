@@ -13,12 +13,13 @@ a:hover { color : #bd820b;  }
 
 
 body {
-  background: {
+  /*background: {
     image: image-url('texture/hatched-light.jpg');
     position: fixed;
-    /* scale background image down for iOS retina display */
+    /* scale background image down for iOS retina display *
     size: 200px;
-  }
+  } */
+  background: #fde18b;
   padding-top: 55px;
 }
 
