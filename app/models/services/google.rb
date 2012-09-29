@@ -34,6 +34,12 @@ class Services::GooglePlus < Service
     return result
   end
   
+  def post(post, url='')
+    person = configure_googleplus
+
+    
+  end
+  
   private
   def configure_googleplus
     google_token = self.access_token
