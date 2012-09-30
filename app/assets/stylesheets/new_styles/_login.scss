@@ -1,19 +1,33 @@
+#conteudo{
+  margin:auto;
+  width:60%;
+  
+}
+#conteudo-mobile{
+  margin:auto;
+  //width:40%;
+  
+  #login,#logo{
+     padding-top : 0px;
+  }
+  
+}
 
-
-#login {
+#login, #logo{
   /*position : absolute;
   top : 0;
   left : 0;*/
-  margin: 50px auto;
+  margin: 20px auto;
   padding-top : 100px;
   padding-bottom : 100px;
-  width : 70%;
+  width : 50%;
   border-radius: 6px 6px 6px 6px;
   
   //background: url(/assets/texture/bg.png) repeat;
 
   //color : #fff;
   text-align : center;
+  float: left;
 
   input[type=text],
   input[type=password] {
@@ -28,8 +42,9 @@
   }
 
   #forgot_password_link {
-    margin : 40px;
+    //margin : 40px;
     color : #bd820b;
     clear : all;
   }
 }
+

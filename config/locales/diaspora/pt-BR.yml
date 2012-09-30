@@ -381,6 +381,7 @@ pt-BR:
       recent_notifications: "Notificações recentes"
       settings: "Configurações"
       view_all: "Ver tudo"
+      search: "Procure pessoas ou #tags"
   likes:
     likes:
       people_dislike_this:
@@ -682,7 +683,7 @@ pt-BR:
       you_are_safe_for_work: "Você marcou seu perfil como apto para todos os públicos, isso significa que você concorda que o conteúdo de seus posts estão de acordo com as normas da comunidade."
       your_bio: "Sobre você"
       your_birthday: "Data de nascimento"
-      your_gender: "Sua sexualidade"
+      your_gender: "Sexo"
       your_location: "Sua localização"
       your_name: "Seu nome"
       your_photo: "Sua foto"
