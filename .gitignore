@@ -29,6 +29,7 @@ config/mailing_list.csv
 log/*
 #public/stylesheets/*.css
 #public/diaspora
+public/uploads/images
 spec/fixtures/*.y*ml
 spec/fixtures/*.fixture.*
 coverage/*
