@@ -1,8 +1,278 @@
 %section#question
-      .clearfix
-            .row
-                  %h2 Auto Avaliação de Perfil
-
-            .row
-                  %p AQUI VAI AQUELA PORCARIA DE QUESTIONARIO QUE A GENTE TEM QUE FAZER
-                  %p MAS PELO MENOS JA TEM UM LUGAR DEFINIDO NO SISTEMA   
+  .clearfix
+    .row
+      %h2 Auto Avaliação de Perfil
+  
+    .row.stream
+      %table#perfil
+        %tr.stream_element
+          %th 
+          %th Muito impreciso
+          %th Moderadamente imprecisa
+          %th Nem preciso nem impreciso
+          %th Moderadamente preciso
+          %th Muito perciso
+        
+        %tr.stream_element.stream_element
+          %td Sou festeiro.
+          %td
+            %input{:type => "radio", :name =>"1", :id => "1", :value => "1", :alt => "Muito impreciso", :title => "Muito impreciso"}
+          %td
+            %input{:type => "radio", :name =>"1", :id => "1", :value => "2", :alt => "Moderadamente imprecisa", :title => "Moderadamente imprecisa"}
+          %td
+            %input{:type => "radio", :name =>"1", :id => "1", :value => "3", :alt => "Nem preciso nem impreciso", :title => "Nem preciso nem impreciso"}
+          %td
+            %input{:type => "radio", :name =>"1", :id => "1", :value => "4", :alt => "Moderadamente preciso", :title => "Moderadamente preciso"}
+          %td
+            %input{:type => "radio", :name =>"1", :id => "1", :value => "5", :alt => "Muito impreciso", :title => "Muito impreciso"}  
+          
+        %tr.stream_element
+          %td Me preocupo com os sentimentos das outras pessoas.
+          %td
+            %input{:type => "radio", :name =>"2", :id=>"2", :value => "5", :alt => "Muito impreciso", :title => "Muito impreciso"}
+          %td
+            %input{:type => "radio", :name =>"2", :id=>"2", :value => "4", :alt => "Moderadamente imprecisa", :title => "Moderadamente imprecisa"}
+          %td
+            %input{:type => "radio", :name =>"2", :id=>"2", :value => "3", :alt => "Nem preciso nem impreciso", :title => "Nem preciso nem impreciso"}
+          %td
+            %input{:type => "radio", :name =>"2", :id=>"2", :value => "2", :alt => "Moderadamente preciso", :title => "Moderadamente preciso"}
+          %td
+            %input{:type => "radio", :name =>"2", :id=>"2", :value => "1", :alt => "Muito impreciso", :title => "Muito impreciso"}
+          
+        %tr.stream_element  
+          %td Faço minhas tarefas imediatamente.
+          %td
+            %input{:type => "radio", :name =>"3", :id=>"3", :value => "1", :alt => "Muito impreciso", :title => "Muito impreciso"}
+          %td
+            %input{:type => "radio", :name =>"3", :id=>"3", :value => "2", :alt => "Moderadamente imprecisa", :title => "Moderadamente imprecisa"}
+          %td
+            %input{:type => "radio", :name =>"3", :id=>"3", :value => "3", :alt => "Nem preciso nem impreciso", :title => "Nem preciso nem impreciso"}
+          %td
+            %input{:type => "radio", :name =>"3", :id=>"3", :value => "4", :alt => "Moderadamente preciso", :title => "Moderadamente preciso"}
+          %td
+            %input{:type => "radio", :name =>"3", :id=>"3", :value => "5", :alt => "Muito impreciso", :title => "Muito impreciso"}  
+        
+        %tr.stream_element  
+          %td Tenho mudanças de temperamento frequentes.
+          %td
+            %input{:type => "radio", :name =>"4", :id=>"4", :value => "5", :alt => "Muito impreciso", :title => "Muito impreciso"}
+          %td
+            %input{:type => "radio", :name =>"4", :id=>"4", :value => "4", :alt => "Moderadamente imprecisa", :title => "Moderadamente imprecisa"}
+          %td
+            %input{:type => "radio", :name =>"4", :id=>"4", :value => "3", :alt => "Nem preciso nem impreciso", :title => "Nem preciso nem impreciso"}
+          %td
+            %input{:type => "radio", :name =>"4", :id=>"4", :value => "2", :alt => "Moderadamente preciso", :title => "Moderadamente preciso"}
+          %td
+            %input{:type => "radio", :name =>"4", :id=>"4", :value => "1", :alt => "Muito impreciso", :title => "Muito impreciso"}
+          
+        %tr.stream_element                    
+          %td Tenho imaginação fértil.
+          %td
+            %input{:type => "radio", :name =>"5", :id=>"5", :value => "1", :alt => "Muito impreciso", :title => "Muito impreciso"}
+          %td
+            %input{:type => "radio", :name =>"5", :id=>"5", :value => "2", :alt => "Moderadamente imprecisa", :title => "Moderadamente imprecisa"}
+          %td
+            %input{:type => "radio", :name =>"5", :id=>"5", :value => "3", :alt => "Nem preciso nem impreciso", :title => "Nem preciso nem impreciso"}
+          %td
+            %input{:type => "radio", :name =>"5", :id=>"5", :value => "4", :alt => "Moderadamente preciso", :title => "Moderadamente preciso"}
+          %td
+            %input{:type => "radio", :name =>"5", :id=>"5", :value => "5", :alt => "Muito impreciso", :title => "Muito impreciso"}  
+                            
+        %tr.stream_element                    
+          %td Não falo muito.
+          %td
+            %input{:type => "radio", :name =>"6", :id=>"6", :value => "5", :alt => "Muito impreciso", :title => "Muito impreciso"}
+          %td
+            %input{:type => "radio", :name =>"6", :id=>"6", :value => "4", :alt => "Moderadamente imprecisa", :title => "Moderadamente imprecisa"}
+          %td
+            %input{:type => "radio", :name =>"6", :id=>"6", :value => "3", :alt => "Nem preciso nem impreciso", :title => "Nem preciso nem impreciso"}
+          %td
+            %input{:type => "radio", :name =>"6", :id=>"6", :value => "2", :alt => "Moderadamente preciso", :title => "Moderadamente preciso"}
+          %td
+            %input{:type => "radio", :name =>"6", :id=>"6", :value => "1", :alt => "Muito impreciso", :title => "Muito impreciso"}
+                                
+        %tr.stream_element                    
+          %td Não tenho interesse nos problemas das outras pessoas.
+          %td
+            %input{:type => "radio", :name =>"7", :id=>"7", :value => "5", :alt => "Muito impreciso", :title => "Muito impreciso"}
+          %td
+            %input{:type => "radio", :name =>"7", :id=>"7", :value => "4", :alt => "Moderadamente imprecisa", :title => "Moderadamente imprecisa"}
+          %td
+            %input{:type => "radio", :name =>"7", :id=>"7", :value => "3", :alt => "Nem preciso nem impreciso", :title => "Nem preciso nem impreciso"}
+          %td
+            %input{:type => "radio", :name =>"7", :id=>"7", :value => "2", :alt => "Moderadamente preciso", :title => "Moderadamente preciso"}
+          %td
+            %input{:type => "radio", :name =>"7", :id=>"7", :value => "1", :alt => "Muito impreciso", :title => "Muito impreciso"}                    
+          
+        %tr.stream_element                    
+          %td As vezes esqueço de colocar as coisas de volta no lugar.
+          %td
+            %input{:type => "radio", :name =>"8", :id=>"8", :value => "5", :alt => "Muito impreciso", :title => "Muito impreciso"}
+          %td
+            %input{:type => "radio", :name =>"8", :id=>"8", :value => "4", :alt => "Moderadamente imprecisa", :title => "Moderadamente imprecisa"}
+          %td
+            %input{:type => "radio", :name =>"8", :id=>"8", :value => "3", :alt => "Nem preciso nem impreciso", :title => "Nem preciso nem impreciso"}
+          %td
+            %input{:type => "radio", :name =>"8", :id=>"8", :value => "2", :alt => "Moderadamente preciso", :title => "Moderadamente preciso"}
+          %td
+            %input{:type => "radio", :name =>"8", :id=>"8", :value => "1", :alt => "Muito impreciso", :title => "Muito impreciso"}
+          
+        %tr.stream_element                    
+          %td Fico calmo a maioria do tempo.
+          %td
+            %input{:type => "radio", :name =>"9", :id=>"9", :value => "1", :alt => "Muito impreciso", :title => "Muito impreciso"}
+          %td
+            %input{:type => "radio", :name =>"9", :id=>"9", :value => "2", :alt => "Moderadamente imprecisa", :title => "Moderadamente imprecisa"}
+          %td
+            %input{:type => "radio", :name =>"9", :id=>"9", :value => "3", :alt => "Nem preciso nem impreciso", :title => "Nem preciso nem impreciso"}
+          %td
+            %input{:type => "radio", :name =>"9", :id=>"9", :value => "4", :alt => "Moderadamente preciso", :title => "Moderadamente preciso"}
+          %td
+            %input{:type => "radio", :name =>"9", :id=>"9", :value => "5", :alt => "Muito impreciso", :title => "Muito impreciso"}  
+                             
+        %tr.stream_element                    
+          %td Não tenho interesse em ideias abstratas
+          %td
+            %input{:type => "radio", :name =>"10", :id=>"10", :value => "5", :alt => "Muito impreciso", :title => "Muito impreciso"}
+          %td
+            %input{:type => "radio", :name =>"10", :id=>"10", :value => "4", :alt => "Moderadamente imprecisa", :title => "Moderadamente imprecisa"}
+          %td
+            %input{:type => "radio", :name =>"10", :id=>"10", :value => "3", :alt => "Nem preciso nem impreciso", :title => "Nem preciso nem impreciso"}
+          %td
+            %input{:type => "radio", :name =>"10", :id=>"10", :value => "2", :alt => "Moderadamente preciso", :title => "Moderadamente preciso"}
+          %td
+            %input{:type => "radio", :name =>"10", :id=>"10", :value => "1", :alt => "Muito impreciso", :title => "Muito impreciso"}                       
+          
+        %tr.stream_element                    
+          %td Conversa com diversas pessoas diferentes numa festa.
+          %td
+            %input{:type => "radio", :name =>"11", :id=>"11", :value => "1", :alt => "Muito impreciso", :title => "Muito impreciso"}
+          %td
+            %input{:type => "radio", :name =>"11", :id=>"11", :value => "2", :alt => "Moderadamente imprecisa", :title => "Moderadamente imprecisa"}
+          %td
+            %input{:type => "radio", :name =>"11", :id=>"11", :value => "3", :alt => "Nem preciso nem impreciso", :title => "Nem preciso nem impreciso"}
+          %td
+            %input{:type => "radio", :name =>"11", :id=>"11", :value => "4", :alt => "Moderadamente preciso", :title => "Moderadamente preciso"}
+          %td
+            %input{:type => "radio", :name =>"11", :id=>"11", :value => "5", :alt => "Muito impreciso", :title => "Muito impreciso"}                      
+          
+        %tr.stream_element                    
+          %td Sinto a emoção dos outros
+          %td
+            %input{:type => "radio", :name =>"12", :id=>"12", :value => "1", :alt => "Muito impreciso", :title => "Muito impreciso"}
+          %td
+            %input{:type => "radio", :name =>"12", :id=>"12", :value => "2", :alt => "Moderadamente imprecisa", :title => "Moderadamente imprecisa"}
+          %td
+            %input{:type => "radio", :name =>"12", :id=>"12", :value => "3", :alt => "Nem preciso nem impreciso", :title => "Nem preciso nem impreciso"}
+          %td
+            %input{:type => "radio", :name =>"12", :id=>"12", :value => "4", :alt => "Moderadamente preciso", :title => "Moderadamente preciso"}
+          %td
+            %input{:type => "radio", :name =>"12", :id=>"12", :value => "5", :alt => "Muito impreciso", :title => "Muito impreciso"}  
+                                
+        %tr.stream_element                    
+          %td Gosto de ordem.
+          %td
+            %input{:type => "radio", :name =>"13", :id=>"13", :value => "1", :alt => "Muito impreciso", :title => "Muito impreciso"}
+          %td
+            %input{:type => "radio", :name =>"13", :id=>"13", :value => "2", :alt => "Moderadamente imprecisa", :title => "Moderadamente imprecisa"}
+          %td
+            %input{:type => "radio", :name =>"13", :id=>"13", :value => "3", :alt => "Nem preciso nem impreciso", :title => "Nem preciso nem impreciso"}
+          %td
+            %input{:type => "radio", :name =>"13", :id=>"13", :value => "4", :alt => "Moderadamente preciso", :title => "Moderadamente preciso"}
+          %td
+            %input{:type => "radio", :name =>"13", :id=>"13", :value => "5", :alt => "Muito impreciso", :title => "Muito impreciso"}                      
+          
+        %tr.stream_element                    
+          %td Fico chateado com facilidade.
+          %td
+            %input{:type => "radio", :name =>"14", :id=>"14", :value => "5", :alt => "Muito impreciso", :title => "Muito impreciso"}
+          %td
+            %input{:type => "radio", :name =>"14", :id=>"14", :value => "4", :alt => "Moderadamente imprecisa", :title => "Moderadamente imprecisa"}
+          %td
+            %input{:type => "radio", :name =>"14", :id=>"14", :value => "3", :alt => "Nem preciso nem impreciso", :title => "Nem preciso nem impreciso"}
+          %td
+            %input{:type => "radio", :name =>"14", :id=>"14", :value => "2", :alt => "Moderadamente preciso", :title => "Moderadamente preciso"}
+          %td
+            %input{:type => "radio", :name =>"14", :id=>"14", :value => "1", :alt => "Muito impreciso", :title => "Muito impreciso"}                        
+          
+          
+        %tr.stream_element                    
+          %td Tenho dificuldade em entender ideias abstratas.
+          %td
+            %input{:type => "radio", :name =>"15", :id=>"15", :value => "5", :alt => "Muito impreciso", :title => "Muito impreciso"}
+          %td
+            %input{:type => "radio", :name =>"15", :id=>"15", :value => "4", :alt => "Moderadamente imprecisa", :title => "Moderadamente imprecisa"}
+          %td
+            %input{:type => "radio", :name =>"15", :id=>"15", :value => "3", :alt => "Nem preciso nem impreciso", :title => "Nem preciso nem impreciso"}
+          %td
+            %input{:type => "radio", :name =>"15", :id=>"15", :value => "2", :alt => "Moderadamente preciso", :title => "Moderadamente preciso"}
+          %td
+            %input{:type => "radio", :name =>"15", :id=>"15", :value => "1", :alt => "Muito impreciso", :title => "Muito impreciso"}    
+                                
+        %tr.stream_element                    
+          %td Procuro não chamar atenção para mim.
+          %td
+            %input{:type => "radio", :name =>"16", :id=>"16", :value => "5", :alt => "Muito impreciso", :title => "Muito impreciso"}
+          %td
+            %input{:type => "radio", :name =>"16", :id=>"16", :value => "4", :alt => "Moderadamente imprecisa", :title => "Moderadamente imprecisa"}
+          %td
+            %input{:type => "radio", :name =>"16", :id=>"16", :value => "3", :alt => "Nem preciso nem impreciso", :title => "Nem preciso nem impreciso"}
+          %td
+            %input{:type => "radio", :name =>"16", :id=>"16", :value => "2", :alt => "Moderadamente preciso", :title => "Moderadamente preciso"}
+          %td
+            %input{:type => "radio", :name =>"16", :id=>"16", :value => "1", :alt => "Muito impreciso", :title => "Muito impreciso"}    
+                                
+        %tr.stream_element                    
+          %td Não me importa com outras pessoas.
+          %td
+            %input{:type => "radio", :name =>"17", :id=>"17", :value => "5", :alt => "Muito impreciso", :title => "Muito impreciso"}
+          %td
+            %input{:type => "radio", :name =>"17", :id=>"17", :value => "4", :alt => "Moderadamente imprecisa", :title => "Moderadamente imprecisa"}
+          %td
+            %input{:type => "radio", :name =>"17", :id=>"17", :value => "3", :alt => "Nem preciso nem impreciso", :title => "Nem preciso nem impreciso"}
+          %td
+            %input{:type => "radio", :name =>"17", :id=>"17", :value => "2", :alt => "Moderadamente preciso", :title => "Moderadamente preciso"}
+          %td
+            %input{:type => "radio", :name =>"17", :id=>"17", :value => "1", :alt => "Muito impreciso", :title => "Muito impreciso"}                        
+        %tr.stream_element                    
+          %td Faço bagunça.
+          %td
+            %input{:type => "radio", :name =>"18", :id=>"18", :value => "5", :alt => "Muito impreciso", :title => "Muito impreciso"}
+          %td
+            %input{:type => "radio", :name =>"18", :id=>"18", :value => "4", :alt => "Moderadamente imprecisa", :title => "Moderadamente imprecisa"}
+          %td
+            %input{:type => "radio", :name =>"18", :id=>"18", :value => "3", :alt => "Nem preciso nem impreciso", :title => "Nem preciso nem impreciso"}
+          %td
+            %input{:type => "radio", :name =>"18", :id=>"18", :value => "2", :alt => "Moderadamente preciso", :title => "Moderadamente preciso"}
+          %td
+            %input{:type => "radio", :name =>"18", :id=>"18", :value => "1", :alt => "Muito impreciso", :title => "Muito impreciso"}
+                                    
+        %tr.stream_element                    
+          %td As vezes me sinto triste.
+          %td
+            %input{:type => "radio", :name =>"19", :id=>"19", :value => "1", :alt => "Muito impreciso", :title => "Muito impreciso"}
+          %td
+            %input{:type => "radio", :name =>"19", :id=>"19", :value => "2", :alt => "Moderadamente imprecisa", :title => "Moderadamente imprecisa"}
+          %td
+            %input{:type => "radio", :name =>"19", :id=>"19", :value => "3", :alt => "Nem preciso nem impreciso", :title => "Nem preciso nem impreciso"}
+          %td
+            %input{:type => "radio", :name =>"19", :id=>"19", :value => "4", :alt => "Moderadamente preciso", :title => "Moderadamente preciso"}
+          %td
+            %input{:type => "radio", :name =>"19", :id=>"19", :value => "5", :alt => "Muito impreciso", :title => "Muito impreciso"}                      
+          
+        %tr.stream_element                    
+          %td Não tenho boa imaginação.
+          %td
+            %input{:type => "radio", :name =>"20", :id=>"20", :value => "5", :alt => "Muito impreciso", :title => "Muito impreciso"}
+          %td
+            %input{:type => "radio", :name =>"20", :id=>"20", :value => "4", :alt => "Moderadamente imprecisa", :title => "Moderadamente imprecisa"}
+          %td
+            %input{:type => "radio", :name =>"20", :id=>"20", :value => "3", :alt => "Nem preciso nem impreciso", :title => "Nem preciso nem impreciso"}
+          %td
+            %input{:type => "radio", :name =>"20", :id=>"20", :value => "2", :alt => "Moderadamente preciso", :title => "Moderadamente preciso"}
+          %td
+            %input{:type => "radio", :name =>"20", :id=>"20", :value => "1", :alt => "Muito impreciso", :title => "Muito impreciso"}                        
+  
+    
+    %br
+    %br
