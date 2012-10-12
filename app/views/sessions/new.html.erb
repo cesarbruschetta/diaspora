@@ -3,15 +3,15 @@
 <% end %>
 
 <div id="conteudo">
-	<div id="logo">
-		<img src="/assets/apple-touch-icon.png" />
+	<div id="logo" class="position">
+		<img src="/assets/LogoCompletoSfundo.png" />
 	</div>
 	
 	
-	<div id="login">
-	  <h1 id="huge-text">
+	<div id="login" class="position">
+	  <!--h1 id="huge-text">
 	    <%= AppConfig[:pod_name] %>
-	  </h1>
+	  </h1-->
 	
 	  <%= form_for(resource, :as => resource_name, :url => session_path(resource_name), :html => {:class => "form-horizontal block-form"}, :autocomplete => 'off') do |f| %>
 	        <fieldset>

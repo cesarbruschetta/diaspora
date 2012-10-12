@@ -17,7 +17,7 @@ defaults: &defaults
   ## However changing http to https is okay and has no consquences.
   ## If you do change it you have to start over as it's hardcoded into
   ## the database.
-  pod_url: "http://www.passim.com.br/"
+  pod_url: "http://localhost:3000/"
 
   ## Setting the bundle of certificate authorities (CA) certificates.
   ## This is operating system specific.
@@ -94,7 +94,7 @@ defaults: &defaults
   ######################################################
 
   ## Name of your pod
-  pod_name: "PASSIM.com.br*"
+  pod_name: "PASSIM"
 
   ## Set this to true to prevent people from signing up for your pod
   ## without an invitation. Note that this needs to be true even for

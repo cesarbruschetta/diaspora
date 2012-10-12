@@ -1,6 +1,7 @@
 #conteudo{
   margin:auto;
   width:60%;
+  min-width: 800px;
   
 }
 #conteudo-mobile{
@@ -12,13 +13,21 @@
   }
   
 }
+#login{
+  padding-top : 20%;
+}
 
-#login, #logo{
+#logo{
+   padding-top : 17%;
+  
+}
+
+.position{
   /*position : absolute;
   top : 0;
   left : 0;*/
   margin: 20px auto;
-  padding-top : 100px;
+  
   padding-bottom : 100px;
   width : 50%;
   border-radius: 6px 6px 6px 6px;
