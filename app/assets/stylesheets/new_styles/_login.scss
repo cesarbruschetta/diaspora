@@ -6,10 +6,16 @@
 }
 #conteudo-mobile{
   margin:auto;
-  //width:40%;
+  //width:50%;
+  min-width:500px;
+  padding: 0 10px;
   
-  #login,#logo{
-     padding-top : 0px;
+  #login{
+    padding-top: 3%;
+  }
+    
+  #logo{
+     padding-top: 1%;
   }
   
 }
