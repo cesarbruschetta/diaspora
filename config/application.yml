@@ -94,7 +94,7 @@ defaults: &defaults
   ######################################################
 
   ## Name of your pod
-  pod_name: "PASSIM"
+  pod_name: "Passim"
 
   ## Set this to true to prevent people from signing up for your pod
   ## without an invitation. Note that this needs to be true even for

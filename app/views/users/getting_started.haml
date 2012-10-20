@@ -56,18 +56,18 @@
 
     %br
     .clearfix
-      .row
+      .row.no_display
         %h2
           = t('.what_are_you_in_to')
 
-      .row
+      .row.no_display
         %p
           = t('.hashtag_explanation')
 
       .row
         .span13
           = form_tag(multiple_tag_followings_path, :method => 'post', :class => "tag_input search_form") do
-            %fieldset
+            %fieldset.no_display
               .clearfix
                 = label_tag 'follow_tags', t('.hashtag_suggestions'), :class => "bootstrapped"
                 .input
@@ -76,7 +76,6 @@
             .clearfix
               %br
               %br
-              %br
               .input
-                = link_to "#{t('.awesome_take_me_to_diaspora')} »", "#", :id => "awesome_button", :class => "btn primary"
+                = link_to "#{t('.awesome_take_me_to_diaspora')} »", "#", :id => "awesome_button", :class => "btn primary no_display"
 

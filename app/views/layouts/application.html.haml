@@ -54,7 +54,10 @@
     %header
       - unless current_user
         = render 'layouts/header'
-
+    
+    %div.container{:style=>'padding: 5px;'} 
+      = image_tag('/assets/bannerHead.png', :style=>'display: block; margin-left: auto; margin-right: auto;padding: 0 20px;')
+  
     .container
       - if @aspect == :getting_started
         = yield
