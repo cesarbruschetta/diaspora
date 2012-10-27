@@ -55,10 +55,10 @@ $(document).ready( function(){
 			result = '#Extroversão ';
 		}
 		else if(min==soma_A){
-			result = '#Afabilidade ';
+			result = '#Sociabilidade ';
 		}
 		else if(min==soma_C){
-			result = '#Consciência ';
+			result = '#Extrupulosidade ';
 		}
 		else if(min==soma_N){
 			result = '#Neuroticismo ';
@@ -72,10 +72,10 @@ $(document).ready( function(){
 			result_max = '#Extroversão ';
 		}
 		else if(max==soma_A){
-			result_max = '#Afabilidade ';
+			result_max = '#Sociabilidade ';
 		}
 		else if(max==soma_C){
-			result_max = '#Consciência ';
+			result_max = '#Extrupulosidade ';
 		}
 		else if(max==soma_N){
 			result_max = '#Neuroticismo ';

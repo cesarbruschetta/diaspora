@@ -5,13 +5,19 @@ class FindRedesController < ApplicationController
     
     
     for user in users
-        
+      #debugger
       for service in user.services
         posts = service.getTimeLine
         for post in posts
           post['user_id'] = user.id
+          tags = ''
+          
+          for tag in user.tag_followings
+            tags += ' #'+tag.tag.name
+            
+          end
+          
           if PostService.find(:all, :conditions => {'uid_post'=>post['uid_post']}) == []
-            #debugger
             
             db = PostService.new(post)
             db.save()
@@ -19,7 +25,7 @@ class FindRedesController < ApplicationController
             mensage = {}
             mensage['aspect_ids'] = ["all_aspects"]
             mensage['public'] = false
-            mensage['text'] = post['service'] + ' | '+ post['text']
+            mensage['text'] = tags +' '+ post['service'] + ' | '+ post['text']
             
             params['status_message'] = mensage
               
